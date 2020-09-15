@@ -3,35 +3,34 @@
 body{
     background-color: skyblue;
 }
+
 .clouds{
     background-color: white;
     border-radius: 100px;
     height: 100px;
     width: 265px;
     position: relative;
-
 }
-.clouds::before{
+
+.clouds::before, .clouds::after{
     background-color: white;
+    border-radius: 100px;
+    content: '';
+    position: absolute;
+}
+
+.clouds::before{
     height: 100px;
     width: 100px;
-    border-radius: 100px;
-    content: '';
-    position: absolute;
     top: -45px;
     left: 50px;
-
 }
+
 .clouds::after{
-    background-color: white;
     height: 120px;
     width: 120px;
-    border-radius: 100px;
-    content: '';
-    position: absolute;
     top: -60px;
     left: 100px;
-
 }
 
 .cloud1 {
@@ -48,16 +47,13 @@ body{
   margin-top: -300px;
   margin-left: 350px;
 }
+
 .cloud4 {
   margin-top: -270px;
   margin-left: 450px;
   background-color: darkgrey;
 }
 
-.cloud4::before{
+.cloud4::before, .cloud4::after{
     background-color: darkgrey;
-}
-.cloud4::after{
-    background-color: darkgrey;
-
 }
