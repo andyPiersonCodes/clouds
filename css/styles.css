@@ -51,9 +51,8 @@ body{
 .cloud4 {
   margin-top: -270px;
   margin-left: 450px;
-  background-color: darkgrey;
 }
 
-.cloud4::before, .cloud4::after{
+.cloud4,.cloud4::before, .cloud4::after{
     background-color: darkgrey;
 }
